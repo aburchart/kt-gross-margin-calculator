@@ -8,11 +8,10 @@ import AboutKari from '@/components/AboutKari'
 import FAQ from '@/components/FAQ'
 import FooterCTA from '@/components/FooterCTA'
 import Footer from '@/components/Footer'
-import { CalculatorProvider } from '@/context/CalculatorContext'
 
 export default function Home() {
   return (
-    <CalculatorProvider>
+    <>
       <Nav />
       <main>
         <Hero />
@@ -25,6 +24,6 @@ export default function Home() {
         <FooterCTA />
       </main>
       <Footer />
-    </CalculatorProvider>
+    </>
   )
 }

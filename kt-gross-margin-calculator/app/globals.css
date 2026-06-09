@@ -15,8 +15,8 @@
   --color-white: #ffffff;
 
   /* Typography */
-  --font-display: var(--font-display-loaded), 'Playfair Display', Georgia, serif;
-  --font-body: var(--font-body-loaded), 'Lato', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', system-ui, sans-serif;
 
   /* Spacing (8px grid) */
   --space-1: 8px;

@@ -44,7 +44,9 @@
   justify-content: center;
   min-height: 48px;
   padding: 10px 24px;
+  background: #7b1828;
   background: var(--color-primary);
+  color: #ffffff;
   color: var(--color-white);
   font-family: var(--font-body);
   font-weight: 700;

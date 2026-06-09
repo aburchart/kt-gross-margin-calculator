@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
-      <body>{children}</body>
+      <body className={lato.className}>{children}</body>
     </html>
   )
 }

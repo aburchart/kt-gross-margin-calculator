@@ -4,23 +4,23 @@ const steps = [
   {
     number: '01',
     icon: '🧮',
-    title: 'Enter Your Numbers',
+    title: 'Enter Your Costs',
     description:
-      'Input your cost price and retail price. No account needed.',
+      'Add product cost, shipping, tariffs, and sales tax details. No account needed.',
   },
   {
     number: '02',
     icon: '⚡',
-    title: 'Get Instant Analysis',
+    title: 'Set Fees & Target',
     description:
-      'We calculate your gross margin, gross profit, and flag if you\'re below the retail benchmark.',
+      'Choose your payment processor and target margin — we back-calculate your ideal price.',
   },
   {
     number: '03',
     icon: '📊',
-    title: 'Receive Your Full Report',
+    title: 'See Your Results',
     description:
-      'Enter your contact info and we\'ll text you a secure link to your saved results — no sales calls.',
+      'Get your recommended selling price, cost breakdown, and gross profit instantly.',
   },
 ]
 
@@ -37,11 +37,13 @@ export default function HowItWorks() {
               <span className={styles.stepNumber} aria-hidden="true">
                 {step.number}
               </span>
-              <span className={styles.icon} aria-hidden="true">
-                {step.icon}
-              </span>
-              <h3 className={styles.title}>{step.title}</h3>
-              <p className={styles.description}>{step.description}</p>
+              <div className={styles.cardContent}>
+                <span className={styles.icon} aria-hidden="true">
+                  {step.icon}
+                </span>
+                <h3 className={styles.title}>{step.title}</h3>
+                <p className={styles.description}>{step.description}</p>
+              </div>
             </article>
           ))}
         </div>

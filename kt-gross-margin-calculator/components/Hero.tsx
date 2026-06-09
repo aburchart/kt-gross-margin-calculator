@@ -1,21 +1,10 @@
 'use client'
 
-import { useCalculatorContext } from '@/context/CalculatorContext'
 import styles from './Hero.module.css'
 
 export default function Hero() {
-  const {
-    costPrice,
-    sellingPrice,
-    setCostPrice,
-    setSellingPrice,
-    triggerFromHero,
-  } = useCalculatorContext()
-
   const handleCtaClick = () => {
-    const calculator = document.getElementById('calculator')
-    calculator?.scrollIntoView({ behavior: 'smooth' })
-    triggerFromHero()
+    document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -48,50 +37,9 @@ export default function Hero() {
           <span>✓ 500+ Retail Clients</span>
         </p>
 
-        <div className={styles.stepCard}>
-          <span className={styles.stepLabel}>Step 1 of 3 — Your Product</span>
-
-          <label className={styles.fieldLabel}>
-            What did you pay for this product? (cost price)
-            <div className={styles.inputWrap}>
-              <span className={styles.prefix}>$</span>
-              <input
-                type="number"
-                min="0"
-                step="0.01"
-                placeholder="0.00"
-                value={costPrice}
-                onChange={(e) => setCostPrice(e.target.value)}
-                className={styles.input}
-              />
-            </div>
-          </label>
-
-          <label className={styles.fieldLabel}>
-            What do you sell it for? (retail price)
-            <div className={styles.inputWrap}>
-              <span className={styles.prefix}>$</span>
-              <input
-                type="number"
-                min="0"
-                step="0.01"
-                placeholder="0.00"
-                value={sellingPrice}
-                onChange={(e) => setSellingPrice(e.target.value)}
-                className={styles.input}
-              />
-            </div>
-          </label>
-
-          <p className={styles.helper}>
-            We&apos;ll calculate your gross margin, gross profit, and compare it
-            against retail industry benchmarks.
-          </p>
-
-          <button type="button" className={styles.cta} onClick={handleCtaClick}>
-            Calculate My Gross Margin →
-          </button>
-        </div>
+        <button type="button" className={styles.cta} onClick={handleCtaClick}>
+          Calculate My Gross Margin →
+        </button>
       </div>
     </section>
   )
