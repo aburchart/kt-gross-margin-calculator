@@ -18,10 +18,6 @@ export const metadata: Metadata = {
   title: 'Retail Gross Margin Calculator — Free Tool by KC Book Works',
   description:
     'Find out in 60 seconds if your retail margins are costing you money. Free calculator for brick-and-mortar store owners.',
-  icons: {
-    icon: '/kc-book-works-logo.png',
-    apple: '/kc-book-works-logo.png',
-  },
   openGraph: {
     title: 'Is Your Retail Margin Quietly Killing Your Store?',
     description:
