@@ -40,10 +40,10 @@ function CurrencyInput({
   optional?: boolean
 }) {
   return (
-    <label className={calcStyles.label} htmlFor={id}>
+    <label className={`${calcStyles.label} ${styles.fieldLabel}`} htmlFor={id}>
       {label}
       {optional && <span className={styles.optionalLabel}> (optional)</span>}
-      <div className={calcStyles.inputWrap}>
+      <div className={`${calcStyles.inputWrap} ${styles.fieldInputWrap}`}>
         <span className={calcStyles.prefix}>$</span>
         <input
           id={id}
@@ -53,7 +53,7 @@ function CurrencyInput({
           placeholder={placeholder}
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className={`${calcStyles.input} ${calcStyles.inputWithPrefix}`}
+          className={`${calcStyles.input} ${calcStyles.inputWithPrefix} ${styles.fieldInput}`}
         />
       </div>
       {helper && <span className={calcStyles.hint}>{helper}</span>}
@@ -430,7 +430,7 @@ export default function DiscountImpactCalculator() {
                 />
               )}
 
-              <label className={calcStyles.label} htmlFor="normalUnits">
+              <label className={`${calcStyles.label} ${styles.fieldLabel}`} htmlFor="normalUnits">
                 Units you normally sell in this period
                 <span className={styles.optionalLabel}> (optional)</span>
                 <input
@@ -441,7 +441,7 @@ export default function DiscountImpactCalculator() {
                   placeholder="80"
                   value={state.normalUnits}
                   onChange={(e) => update('normalUnits', e.target.value)}
-                  className={calcStyles.input}
+                  className={`${calcStyles.input} ${styles.fieldInput}`}
                 />
                 <span className={calcStyles.hint}>
                   Use a typical week, month — whatever period your sale will
@@ -455,7 +455,7 @@ export default function DiscountImpactCalculator() {
               <h3 className={styles.sectionHeading}>Your Planned Discount</h3>
 
               <div className={styles.discountRow}>
-                <label className={calcStyles.label} htmlFor="discountPct">
+                <label className={`${calcStyles.label} ${styles.fieldLabel}`} htmlFor="discountPct">
                   Discount % you&apos;re planning
                 </label>
                 <div className={styles.discountControls}>
