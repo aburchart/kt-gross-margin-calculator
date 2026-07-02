@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function DiscountImpactPage() {
   return (
     <>
-      <Nav />
+      <Nav ctaHref="#calculator" ctaLabel="Run the Calculator" />
       <main className="discount-impact-main">
         <DiscountImpactHero />
         <DiscountImpactCalculator />

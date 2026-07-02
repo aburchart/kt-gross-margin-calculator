@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function DcPromotionPage() {
   return (
     <>
-      <Nav />
+      <Nav ctaHref="#calculator" ctaLabel="See My Forecast" />
       <main className="dc-promotion-main">
         <DcPromotionHero />
         <DcPromotionCalculator />

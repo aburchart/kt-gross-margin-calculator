@@ -1,11 +1,22 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './Nav.module.css'
 
-export default function Nav() {
+interface NavProps {
+  brandHref?: string
+  ctaHref?: string
+  ctaLabel?: string
+}
+
+export default function Nav({
+  brandHref = '/',
+  ctaHref = '/#tools',
+  ctaLabel = 'All Tools',
+}: NavProps) {
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
-        <a href="#" className={styles.brand}>
+        <Link href={brandHref} className={styles.brand}>
           <Image
             src="/kc-book-works-logo.png"
             alt="KC Book Works"
@@ -15,9 +26,9 @@ export default function Nav() {
             priority
           />
           <span className={styles.logoText}>KC Book Works</span>
-        </a>
-        <a href="#calculator" className={styles.cta}>
-          Calculate My Margins
+        </Link>
+        <a href={ctaHref} className={styles.cta}>
+          {ctaLabel}
         </a>
       </div>
     </nav>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function DoorCrasherCalculatorPage() {
   return (
     <>
-      <Nav />
+      <Nav ctaHref="#calculator" ctaLabel="Calculate Event Impact" />
       <DoorCrasherProvider>
         <main>
           <DoorCrasherHero />

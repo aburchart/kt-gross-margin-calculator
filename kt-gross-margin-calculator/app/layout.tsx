@@ -15,13 +15,13 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Retail Gross Margin Calculator — Free Tool by KC Book Works',
+  title: 'Free Retail Calculators — KC Book Works',
   description:
-    'Find out in 60 seconds if your retail margins are costing you money. Free calculator for brick-and-mortar store owners.',
+    'Free retail tools for store owners — gross margin, discount impact, and door crasher profit calculators. Instant results, no account required.',
   openGraph: {
-    title: 'Is Your Retail Margin Quietly Killing Your Store?',
+    title: 'Free Retail Calculators for Store Owners',
     description:
-      'Enter your cost and selling price — get your gross margin, profit per unit, and industry benchmark comparison instantly.',
+      'Pricing, promotions, and event profit tools built for brick-and-mortar retailers.',
     url: 'https://calculator.ktbookworks.com',
     siteName: 'KC Book Works',
   },

@@ -1,0 +1,123 @@
+.section {
+  background: #faf6f1;
+  background: var(--color-surface);
+  padding: 80px 24px;
+  padding: var(--space-10) var(--space-3);
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.headline {
+  margin: 16px 0 12px;
+  margin: var(--space-2) 0 12px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.subheadline {
+  margin: 0 auto 48px;
+  margin: 0 auto var(--space-6);
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  gap: var(--space-3);
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 32px;
+  padding: var(--space-4);
+  padding-top: 40px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.icon {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 12px;
+  margin-bottom: var(--space-2);
+  line-height: 1;
+}
+
+.title {
+  margin: 0 0 8px;
+  margin: 0 0 var(--space-1);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.description {
+  flex: 1;
+  margin: 0 0 16px;
+  margin: 0 0 var(--space-2);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.linkText {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
