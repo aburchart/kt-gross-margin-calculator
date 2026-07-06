@@ -28,6 +28,14 @@
   line-height: 1.5;
 }
 
+.ctaGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
 .cta {
   display: inline-flex;
   align-items: center;
@@ -47,4 +55,26 @@
 .cta:hover {
   background: var(--color-gold-dark);
   box-shadow: var(--shadow-gold);
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 16px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 100px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.ctaSecondary:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--color-white);
 }

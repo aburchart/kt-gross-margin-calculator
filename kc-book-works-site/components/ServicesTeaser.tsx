@@ -3,18 +3,18 @@ import styles from './ServicesTeaser.module.css'
 
 const tiers = [
   {
-    name: 'Core Bookkeeping',
+    name: 'Bronze',
     description: 'Clean, accurate books, done for you. No surprises at tax time.',
   },
   {
-    name: 'Growth Package',
+    name: 'Silver',
     description:
-      'Everything in Core, plus regular check-ins and reporting, so you always know where you stand.',
+      'Most Popular. Everything in Bronze, plus regular check-ins and reporting, so you always know where you stand.',
   },
   {
-    name: 'Virtual CFO',
+    name: 'Gold',
     description:
-      'Tax planning, entity structuring, and budgeting strategy for owners ready to make bigger moves.',
+      'Strategic advisory: CFO-level calls, cash-flow forecasting, and planning for owners ready to make bigger moves.',
   },
 ]
 

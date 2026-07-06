@@ -8,21 +8,28 @@ export default function Hero() {
       <div className={styles.glowBurgundy} aria-hidden="true" />
 
       <div className={styles.content}>
-        <span className={styles.eyebrow}>SERVING RETAIL STORES ACROSS ONTARIO</span>
+        <span className={styles.eyebrow}>
+          BOOKKEEPING FOR RETAIL STORE OWNERS ACROSS ONTARIO
+        </span>
 
         <h1 className={styles.headline}>
           Know Your Real Margins Before They Quietly Kill Your Store.
         </h1>
 
         <p className={styles.subheadline}>
-          Most retail owners price by gut feel and wonder why they&apos;re busy but
-          broke. Two free tools below show you exactly where the money&apos;s going
-          — no spreadsheet required.
+          We handle the books for brick-and-mortar retailers across Ontario so you
+          can focus on the floor, not the spreadsheet. Two free tools below show
+          you exactly where the money&apos;s going — no spreadsheet required.
         </p>
 
-        <Link href="/tools" className={styles.cta}>
-          Explore the Free Tools →
-        </Link>
+        <div className={styles.ctaGroup}>
+          <Link href="/contact" className={styles.cta}>
+            Book a Discovery Call →
+          </Link>
+          <Link href="/tools" className={styles.ctaSecondary}>
+            or try a free tool first →
+          </Link>
+        </div>
 
         <p className={styles.trustRow}>
           <span>📍 Ontario-Based</span>

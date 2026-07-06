@@ -71,10 +71,11 @@ export default function ToolsPreview({ variant }: ToolsPreviewProps) {
     <section className={styles.section}>
       <div className={styles.inner}>
         <span className={styles.eyebrow}>FREE TOOLS</span>
-        <h1 className={styles.headline}>Built for Retail Store Owners</h1>
+        <h1 className={styles.headline}>Which of These Is Your Problem Right Now?</h1>
         <p className={styles.intro}>
-          Two calculators, built around the questions retail owners actually ask.
-          Try either one — no signup required to see your first result.
+          Two calculators, each built around a different question retail owners
+          actually ask. Pick the one that matches what&apos;s on your mind — no
+          signup required to see your first result.
         </p>
 
         <div className={styles.grid}>

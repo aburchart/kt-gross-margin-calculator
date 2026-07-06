@@ -28,9 +28,14 @@ export default function Nav() {
           ))}
         </div>
 
-        <Link href="/tools" className={styles.cta}>
-          Try a Free Tool
-        </Link>
+        <div className={styles.ctaGroup}>
+          <Link href="/contact" className={styles.cta}>
+            Book a Discovery Call
+          </Link>
+          <Link href="/tools" className={styles.ctaSecondary}>
+            Try a Free Tool
+          </Link>
+        </div>
       </div>
     </nav>
   )
