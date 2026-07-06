@@ -27,9 +27,34 @@ const hubTools = [
     comingSoon: false,
   },
   {
+    href: '/tools/gross-margin-calculator',
+    title: 'Gross Margin Calculator',
+    description:
+      'Enter your costs, fees, and target margin — get your recommended selling price and see where profit is leaking.',
+    button: 'Try It Free →',
+    comingSoon: false,
+  },
+  {
+    href: '/tools/discount-impact',
+    title: 'Discount Impact Calculator',
+    description:
+      'See exactly how many more units you need to sell to break even before you announce a sale.',
+    button: 'Try It Free →',
+    comingSoon: false,
+  },
+  {
+    href: '/tools/dc-promotion',
+    title: 'Door Crasher Profit Forecaster',
+    description:
+      'Enter your planned event numbers and get an instant profit forecast before you spend on ads.',
+    button: 'Try It Free →',
+    comingSoon: false,
+  },
+  {
     href: '/tools/door-crasher-calculator',
-    title: 'Door-Crasher Promotion Calculator',
-    description: 'Know your real profit (or loss) before you run the sale.',
+    title: 'Door-Crasher Event Impact Calculator',
+    description:
+      'Measure whether your door crasher promotion actually made money after the event is over.',
     button: 'Try It Free →',
     comingSoon: false,
   },
@@ -67,15 +92,17 @@ export default function ToolsPreview({ variant }: ToolsPreviewProps) {
     )
   }
 
+  const liveToolCount = hubTools.filter((tool) => !tool.comingSoon).length
+
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
         <span className={styles.eyebrow}>FREE TOOLS</span>
         <h1 className={styles.headline}>Which of These Is Your Problem Right Now?</h1>
         <p className={styles.intro}>
-          Two calculators, each built around a different question retail owners
-          actually ask. Pick the one that matches what&apos;s on your mind — no
-          signup required to see your first result.
+          {liveToolCount} free calculators, each built around a different question
+          retail owners actually ask. Pick the one that matches what&apos;s on your
+          mind — no signup required to see your first result.
         </p>
 
         <div className={styles.grid}>
