@@ -1,0 +1,36 @@
+{
+  "name": "@kc-book-works/calculator-ui",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./gross-margin": "./src/gross-margin/index.ts",
+    "./door-crasher": "./src/door-crasher/index.ts",
+    "./discount-impact": "./src/discount-impact/index.ts",
+    "./dc-promotion": "./src/dc-promotion/index.ts",
+    "./profit-margin": "./src/profit-margin/index.ts",
+    "./Calculator": "./src/Calculator.tsx",
+    "./constants": "./src/constants.ts",
+    "./lead": "./src/lead.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "echo \"no lint config in calculator-ui\"",
+    "build": "echo \"@kc-book-works/calculator-ui is source-consumed by Next\""
+  },
+  "dependencies": {
+    "@kc-book-works/calculators": "workspace:*"
+  },
+  "peerDependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@kc-book-works/calculators",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./calculateMargins": "./src/calculateMargins.ts",
+    "./calculateDoorCrasher": "./src/calculateDoorCrasher.ts",
+    "./calculateDiscountImpact": "./src/calculateDiscountImpact.ts",
+    "./calculateDcPromotion": "./src/calculateDcPromotion.ts",
+    "./calculateProductMargins": "./src/calculateProductMargins.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "echo \"@kc-book-works/calculators is source-consumed by Next\""
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

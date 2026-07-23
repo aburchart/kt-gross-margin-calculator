@@ -1,0 +1,5 @@
+{
+  "regions": ["iad1"],
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm build --filter=web"
+}
