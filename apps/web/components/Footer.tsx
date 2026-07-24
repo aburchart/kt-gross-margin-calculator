@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { NAP, SOCIAL } from '@/lib/site'
 import styles from './Footer.module.css'
 
@@ -15,8 +16,14 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.grid}>
         <div className={styles.col}>
-          <Link href="/" className={styles.brand}>
-            KC Book Works
+          <Link href="/" className={styles.brand} aria-label="KC Book Works home">
+            <Image
+              src="/kc-book-works-logo-lockup-footer.png"
+              alt="KC Book Works"
+              width={220}
+              height={60}
+              className={styles.logo}
+            />
           </Link>
           <p className={styles.tagline}>
             Proactive bookkeeping and free margin tools for brick-and-mortar

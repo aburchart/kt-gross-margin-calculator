@@ -4,7 +4,7 @@
   z-index: 100;
   background: var(--color-white);
   box-shadow: var(--shadow-sm);
-  height: 64px;
+  height: 72px;
 }
 
 .inner {
@@ -21,30 +21,15 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
   text-decoration: none;
   flex-shrink: 0;
+  line-height: 0;
 }
 
-.logoMark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.logoText {
-  font-family: var(--font-display);
-  color: var(--color-primary);
-  font-size: 18px;
-  font-weight: 700;
+.logo {
+  width: auto;
+  height: 48px;
+  object-fit: contain;
 }
 
 .links {
@@ -113,8 +98,10 @@
 }
 
 @media (max-width: 480px) {
-  .logoText {
-    display: none;
+  .logo {
+    height: 32px;
+    width: auto;
+    max-width: 150px;
   }
 
   .ctaSecondary {

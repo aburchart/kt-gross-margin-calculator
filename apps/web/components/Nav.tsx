@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Nav.module.css'
 
 const navLinks = [
@@ -13,11 +14,15 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
-        <Link href="/" className={styles.brand}>
-          <span className={styles.logoMark} aria-hidden="true">
-            KC
-          </span>
-          <span className={styles.logoText}>KC Book Works</span>
+        <Link href="/" className={styles.brand} aria-label="KC Book Works home">
+          <Image
+            src="/kc-book-works-logo-lockup.png"
+            alt="KC Book Works"
+            width={220}
+            height={60}
+            className={styles.logo}
+            priority
+          />
         </Link>
 
         <div className={styles.links}>
